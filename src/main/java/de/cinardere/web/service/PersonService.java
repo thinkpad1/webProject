@@ -8,6 +8,11 @@ import de.cinardere.web.dto.PersonDto;
 import de.cinardere.web.mapper.IPersonMapper;
 import de.cinardere.web.repository.PersonRepository;
 
+/**
+ * Business-Layer
+ * 
+ * */
+
 @Service
 public class PersonService {
 
