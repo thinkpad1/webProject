@@ -1,0 +1,8 @@
+de/cinardere/web/service/PersonService.class
+de/cinardere/web/controller/PersonController.class
+de/cinardere/web/domain/Person.class
+de/cinardere/web/mapper/IPersonMapper.class
+de/cinardere/web/MainApp.class
+de/cinardere/web/dto/PersonDto.class
+de/cinardere/web/repository/PersonRepository.class
+de/cinardere/web/serializer/CustomPersonDtoDeserializer.class
