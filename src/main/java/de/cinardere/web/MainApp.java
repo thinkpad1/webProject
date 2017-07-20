@@ -14,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 public class MainApp {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(MainApp.class, args);
 	}
