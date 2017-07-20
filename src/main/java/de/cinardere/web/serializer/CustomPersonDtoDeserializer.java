@@ -12,14 +12,15 @@ import de.cinardere.web.dto.PersonDto;
 
 public class CustomPersonDtoDeserializer extends StdDeserializer<PersonDto>{
 
-	public CustomPersonDtoDeserializer() {
-		this(null);
-		
-	}
+	private static final long serialVersionUID = 1L;
+	
 	protected CustomPersonDtoDeserializer(Class<?> vc) {
 		super(vc);
 	}
-	private static final long serialVersionUID = 1L;
+	
+	public CustomPersonDtoDeserializer() {
+		this(null);
+	}
 
 	@Override
 	public PersonDto deserialize(JsonParser parser, DeserializationContext context) throws IOException, JsonProcessingException {
@@ -28,8 +29,8 @@ public class CustomPersonDtoDeserializer extends StdDeserializer<PersonDto>{
 		JsonNode node = parser.getCodec().readTree(parser);
 		
 		String name = node.get("name").asText();
-		Long age = node.get("age").asLong();
-		String pw = node.get("password").asText();
+		Long age    = node.get("age").asLong();
+		String pw   = node.get("password").asText();
 			dto.setAge(age);
 			dto.setName(name);
 			dto.setPassword(pw);
