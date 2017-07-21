@@ -4,5 +4,5 @@
 /Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/dto/PersonDto.java
 /Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/repository/PersonRepository.java
 /Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/service/PersonService.java
+/Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/jackson/CustomPersonDtoDeserializer.java
 /Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/domain/Person.java
-/Users/Ghuraba/Applications/eclipse/workspace/web/src/main/java/de/cinardere/web/serializer/CustomPersonDtoDeserializer.java

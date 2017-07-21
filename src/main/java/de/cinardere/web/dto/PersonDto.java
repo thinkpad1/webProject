@@ -2,7 +2,7 @@ package de.cinardere.web.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
-import de.cinardere.web.serializer.CustomPersonDtoDeserializer;
+import de.cinardere.web.jackson.CustomPersonDtoDeserializer;
 
 @JsonDeserialize(using = CustomPersonDtoDeserializer.class)
 public class PersonDto {
@@ -45,6 +45,12 @@ public class PersonDto {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "PersonDto [" + (id != null ? "id=" + id + ", " : "") + (name != null ? "name=" + name + ", " : "")
+				+ (age != null ? "age=" + age + ", " : "") + (password != null ? "password=" + password : "") + "]";
 	}
 
 }
